@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 52" role="img" aria-label="Race Point">
+  <circle cx="26" cy="26" r="25" fill="none" stroke="#12305a" stroke-width="1.6"/>
+  <circle cx="26" cy="26" r="21" fill="#12305a"/>
+  <path d="M12 33l7.5-11 5 7 6-9.5L38 33z" fill="#ffffff"/>
+  <rect x="12" y="35.4" width="26" height="2" rx="1" fill="#2f7fb8"/>
+  <text x="65" y="25" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="700" letter-spacing="2.7" fill="#12305a">RACE POINT</text>
+  <rect x="65" y="31" width="160" height="1" fill="#12305a" opacity=".35"/>
+  <text x="65" y="43" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.9" fill="#0a5fbf">ALPINE SKIING</text>
+</svg>
