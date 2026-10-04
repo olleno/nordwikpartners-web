@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kansliet – demo · Nordwik Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Newsreader:opsz,wght@6..72,600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141A16;--green:#4E7A45;--quiet:#5c645e;--rule:#dfe3df;--bg:#fafbf9;--warn:#b5651d;--warnbg:#fdf3e7}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.demo{background:var(--ink);color:#fff;text-align:center;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.5px;padding:7px 16px}
+.demo a{color:#b9d4b1}
+header{background:#fff;border-bottom:1px solid var(--rule);padding:14px 24px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-family:Newsreader,Georgia,serif;font-weight:600;letter-spacing:.8px;text-decoration:none;color:var(--ink)}
+.brand small{display:block;font:500 9px 'IBM Plex Mono',monospace;letter-spacing:3px;color:var(--green)}
+nav a{color:var(--ink);text-decoration:none;margin-right:18px;font-weight:600;cursor:pointer}nav a:hover,nav a.on{color:var(--green)}
+.badge{background:var(--green);color:#fff;border-radius:10px;padding:1px 8px;font-size:12px;margin-left:4px}
+main{max-width:1100px;margin:0 auto;padding:24px 16px}
+h1{font-weight:800;font-size:26px;margin:0 0 4px}h2{font-size:17px;font-weight:800;margin:28px 0 10px}
+.sub{color:var(--quiet);margin-bottom:20px}
+.tabell{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--quiet);background:#f3f6f2}
+td.n{text-align:right;white-space:nowrap}a{color:var(--green)}
+.kort{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--green);padding:14px 16px;margin-bottom:12px}
+.kort.osaker{border-left-color:var(--warn)}
+.tal{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:8px}.tal div{background:#fff;border:1px solid var(--rule);padding:12px 16px;min-width:160px}
+.tal b{display:block;font-size:22px}
+.osakert{background:var(--warnbg);color:var(--warn);font-weight:600}
+.tag{font:500 11px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:1px;color:var(--green)}
+button{font:inherit;font-weight:600;border:1px solid var(--green);background:var(--green);color:#fff;padding:7px 14px;cursor:pointer;border-radius:3px}
+button.av{background:#fff;color:var(--ink);border-color:var(--rule)}
+input{font:inherit;padding:5px 7px;border:1px solid var(--rule);width:100%}
+.grid{display:grid;grid-template-columns:200px 1fr;gap:6px 14px;align-items:center;margin:10px 0}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.citat{font-size:12px;color:var(--quiet);font-style:italic}
+.knappar{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+pre{background:#fff;border:1px solid var(--rule);padding:12px;overflow-x:auto;font:12px 'IBM Plex Mono',monospace}
+</style></head><body>
+<div class="demo">DEMO med påhittade avtal · inget sparas · <a href="/">nordwikpartners.se</a></div>
+<header><a class="brand" href="#register"><svg width="26" height="26" viewBox="0 0 44 44"><g transform="translate(2,2)" fill="none" stroke="#141A16" stroke-width="2"><rect width="40" height="40"/><line y1="15" x2="40" y2="15"/><line x1="22" x2="22" y2="40"/><rect x="22" y="15" width="18" height="25" fill="#4E7A45" stroke="none"/></g></svg>
+<div>KANSLIET<small>NORDWIK · EXEMPELSTIFTET</small></div></a>
+<nav id="nav"></nav></header>
+<main id="main"></main>
+<script>
+const KPI={"2023-07":405.67,"2024-08":413.78,"2025-07":419.75,"2025-08":418.13};
+const IDAG="2026-02-10";
+const FALT={nummer:"Avtalsnummer",typ:"Typ",fastighet:"Fastighet",kommun:"Kommun",arrendator:"Arrendator",arrendator_adress:"Adress",areal_ha:"Areal (ha)",avgift_kr:"Avgift (kr/år)",kpi_basmanad:"KPI-basmånad",tilltradesdag:"Tillträde",slutdag:"Arrendetiden slutar",uppsagningstid_man:"Uppsägningstid (mån)",forlangning_ar:"Förlängning (år)",betalningsdag:"Förfallodag (MM-DD)"};
+const TAL=["areal_ha","avgift_kr","uppsagningstid_man","forlangning_ar"];
+let S={avtal:[
+ {id:1,nummer:"101",typ:"gårdsarrende",fastighet:"Exempelby Prästgården 1:4",kommun:"Exempelby",arrendator:"Anna Ängsdal",arrendator_adress:"Ängsdal 4, 621 99 Exempelby",areal_ha:48.5,avgift_kr:48500,aktuell:48500,kpi_basmanad:"2023-07",tilltradesdag:"2024-03-14",slutdag:"2029-03-13",uppsagningstid_man:12,forlangning_ar:5,betalningsdag:"03-01"},
+ {id:2,nummer:"102",typ:"sidoarrende",fastighet:"Exempelby Kyrkbolet 2:11",kommun:"Exempelby",arrendator:"Bengt Bäckström",arrendator_adress:"Bäckvägen 2, 621 98 Exempelby",areal_ha:18,avgift_kr:9200,aktuell:9200,kpi_basmanad:"2024-08",tilltradesdag:"2025-03-14",slutdag:"2027-03-13",uppsagningstid_man:6,forlangning_ar:1,betalningsdag:"11-30"}],
+ forslag:[], logg:[], nyckel:{}, nid:1};
+const nu=()=>new Date().toLocaleString("sv-SE");
+const kr=v=>v==null?"–":Math.round(v).toLocaleString("sv-SE")+" kr";
+const logga=(vem,vad)=>S.logg.unshift({tid:nu(),vem,vad});
+function forslag(avtal_id,typ,rubrik,data,nyckel,vem="AI"){if(S.nyckel[nyckel])return;S.nyckel[nyckel]=1;S.forslag.push({id:S.nid++,avtal_id,typ,rubrik,data,status:"väntar",skapad:nu()});logga(vem,"Förslag skapat: "+rubrik)}
+function minusMan(d,m){const x=new Date(d);x.setMonth(x.getMonth()-m);return x.toISOString().slice(0,10)}
+function nattkorning(){
+ const ar=+IDAG.slice(0,4);let n=0,fore=S.forslag.length;
+ for(const a of S.avtal){
+  const bar=IDAG.slice(5)<=(a.betalningsdag||"12-31")?ar:ar+1;
+  if(a.kpi_basmanad){const jm=(bar-1)+"-"+a.kpi_basmanad.slice(5);
+   if(KPI[jm]){const ny=Math.max(a.avgift_kr,Math.round(a.avgift_kr*KPI[jm]/KPI[a.kpi_basmanad]));
+    if(ny!==a.aktuell)forslag(a.id,"uppräkning",`Avtal ${a.nummer}: höj avgiften ${kr(a.aktuell)} → ${kr(ny)} (${bar})`,{avgift_kr:ny,fran:a.aktuell,jm,bas:a.kpi_basmanad,kj:KPI[jm],kb:KPI[a.kpi_basmanad]},`u${a.id}${bar}`)}}
+  const vantar=S.forslag.some(f=>f.avtal_id===a.id&&f.typ==="uppräkning"&&f.status==="väntar");
+  const ff=bar+"-"+a.betalningsdag, start=new Date(new Date(ff)-30*864e5).toISOString().slice(0,10);
+  if(!vantar&&start<=IDAG&&IDAG<=ff)forslag(a.id,"faktura",`Avtal ${a.nummer}: faktura ${kr(a.aktuell)}, förfaller ${ff}`,{belopp:a.aktuell,ff,text:`Arrendeavgift ${bar}, avtal ${a.nummer}`},`f${a.id}${bar}`);
+  const sista=minusMan(a.slutdag,a.uppsagningstid_man), fr=new Date(new Date(sista)-120*864e5).toISOString().slice(0,10);
+  if(fr<=IDAG&&IDAG<=sista){const fl=(+a.slutdag.slice(0,4)+a.forlangning_ar)+a.slutdag.slice(4);
+   forslag(a.id,"frist",`Avtal ${a.nummer}: sista dag att säga upp är ${sista}. Annars förlängs avtalet till ${fl}`,{sista,fl},`p${a.id}${a.slutdag}`)}
+ }
+ n=S.forslag.length-fore;logga("System",`Nattkörning (${IDAG}): ${n} nya förslag`);return n}
+// inläst avtal 103 i kön från början
+const AI103={nummer:"103",typ:"jakt",fastighet:"Exempelby Prästgården 1:4",kommun:"Exempelby",arrendator:"Exempelby jaktlag",arrendator_adress:"Skogsvägen 7, 621 97 Exempelby",areal_ha:null,avgift_kr:3500,kpi_basmanad:null,tilltradesdag:"2024-07-01",slutdag:"2026-06-30",uppsagningstid_man:3,forlangning_ar:1,betalningsdag:"08-01",
+ citat:{nummer:"Avtal 103",typ:"JAKTARRENDE",fastighet:"Exempelby Prästgården 1:4",kommun:"Exempelby kommun",arrendator:"Exempelby jaktlag",arrendator_adress:"Skogsvägen 7, 621 97 Exempelby",avgift_kr:"3 X00 kr per jaktår",tilltradesdag:"från 1 juli 2024",slutdag:"till och med 30 juni 2026",uppsagningstid_man:"senast tre månader före upplåtelsetidens slut",forlangning_ar:"förlängs avtalet med ett år",betalningsdag:"senast 1 augusti"},osakra:["avgift_kr"]};
+forslag(null,"nytt_avtal","Nytt avtal inläst: 103 – Exempelby Prästgården 1:4",AI103,"n103","AI");
+nattkorning();
+
+function besluta(id,godk){
+ const f=S.forslag.find(x=>x.id===id),d=f.data;
+ if(godk){
+  if(f.typ==="nytt_avtal"){const ny={id:S.avtal.length+1};for(const k in FALT){let v=document.getElementById("f_"+k).value;ny[k]=TAL.includes(k)?(v?+v:null):(v||null)}ny.aktuell=ny.avgift_kr;S.avtal.push(ny);f.avtal_id=ny.id;
+   if(ny.avgift_kr!==d.avgift_kr)logga("Handläggare",`Rättade avgiften i avtal 103 från ${kr(d.avgift_kr)} till ${kr(ny.avgift_kr)}`)}
+  if(f.typ==="uppräkning")S.avtal.find(a=>a.id===f.avtal_id).aktuell=d.avgift_kr;
+ }
+ f.status=godk?"godkänd":"avslagen";f.beslutad=nu();logga("Handläggare",(godk?"Godkände: ":"Avslog: ")+f.rubrik);visa("ko")}
+
+const V={
+register(){const sum=S.avtal.reduce((s,a)=>s+a.aktuell,0);
+ return `<h1>Register</h1><div class="sub">Alla upplåtelser, med aktuell avgift. Dagens datum i demon: ${IDAG}.</div>
+ <div class="tal"><div>Avtal<b>${S.avtal.length}</b></div><div>Årlig arrendeintäkt<b>${kr(sum)}</b></div><div>Väntar på godkännande<b>${vant()}</b></div></div>
+ <h2>Avtal</h2><div class="tabell"><table><tr><th>Avtal</th><th>Fastighet</th><th>Typ</th><th>Arrendator</th><th>Slutar</th><th class="n">Avgift</th></tr>
+ ${S.avtal.map(a=>`<tr><td><a onclick="visa('avtal',${a.id})">${a.nummer}</a></td><td>${a.fastighet}</td><td>${a.typ}</td><td>${a.arrendator}</td><td>${a.slutdag}</td><td class="n">${kr(a.aktuell)}</td></tr>`).join("")}</table></div>
+ <div class="knappar" style="margin-top:24px"><button class="av" onclick="const n=nattkorning();visa(n?'ko':'register')">Kör nattkörningen nu</button><span class="sub">Räknar upp avgifter, skapar fakturor och bevakar frister.</span></div>`},
+avtal(id){const a=S.avtal.find(x=>x.id===id),h=S.forslag.filter(f=>f.avtal_id===id).reverse();
+ return `<div class="tag">${a.typ}</div><h1>Avtal ${a.nummer}</h1><div class="sub">${a.fastighet}, ${a.kommun}</div>
+ <div class="tabell"><table><tr><th>Arrendator</th><td>${a.arrendator}, ${a.arrendator_adress||""}</td></tr><tr><th>Grundavgift</th><td>${kr(a.avgift_kr)}${a.kpi_basmanad?", KPI-bas "+a.kpi_basmanad:", ingen indexklausul"}</td></tr>
+ <tr><th>Aktuell avgift</th><td><b>${kr(a.aktuell)}</b> per år, förfaller ${a.betalningsdag}</td></tr><tr><th>Arrendetid</th><td>${a.tilltradesdag} – ${a.slutdag}, förlängs ${a.forlangning_ar} år i taget</td></tr>
+ <tr><th>Uppsägning</th><td>${a.uppsagningstid_man} månader före – sista dag <b>${minusMan(a.slutdag,a.uppsagningstid_man)}</b></td></tr></table></div>
+ <h2>Historik</h2>${h.map(f=>`<div class="kort"><span class="tag">${f.typ} · ${f.status}</span><br>${f.rubrik}</div>`).join("")||'<p class="sub">Ingen historik ännu.</p>'}`},
+ko(){const v=S.forslag.filter(f=>f.status==="väntar").sort((a,b)=>(a.typ==="nytt_avtal"?0:1)-(b.typ==="nytt_avtal"?0:1));
+ return `<h1>Att godkänna</h1><div class="sub">AI:n föreslår, du beslutar. Inget skickas eller ändras förrän du godkänt.</div>`+(v.map(f=>{const d=f.data;let b="";
+  if(f.typ==="nytt_avtal")b=`<p class="osakert" style="padding:6px 8px">AI:n kunde inte belägga ${d.osakra.length} uppgift i avtalstexten. Kontrollera det markerade fältet – prova att rätta det innan du godkänner.</p><div class="grid">${Object.entries(FALT).map(([k,n])=>{const o=d.osakra.includes(k)?' class="osakert"':'';return `<label${o}>${n}</label><div><input id="f_${k}" value="${d[k]??""}"${o}>${d.citat[k]?`<div class="citat">”${d.citat[k]}”</div>`:""}</div>`}).join("")}</div>`;
+  if(f.typ==="uppräkning")b=`<p>KPI ${d.jm}: ${d.kj} / KPI ${d.bas}: ${d.kb} × grundavgiften ger ${kr(d.avgift_kr)} (i dag ${kr(d.fran)}).</p>`;
+  if(f.typ==="faktura")b=`<p>${d.text} – ${kr(d.belopp)}, förfaller ${d.ff}. Godkända fakturor kommer med i SIE-exporten.</p>`;
+  if(f.typ==="frist")b=`<p>Vill ni säga upp eller ändra villkoren måste det ske senast ${d.sista}. Annars förlängs avtalet till ${d.fl}.</p>`;
+  return `<div class="kort${f.typ==="nytt_avtal"?" osaker":""}"><span class="tag">${f.typ.replace("_"," ")}</span><br><b>${f.rubrik}</b>${b}<div class="knappar"><button onclick="besluta(${f.id},true)">Godkänn</button><button class="av" onclick="besluta(${f.id},false)">Avslå</button></div></div>`}).join("")||'<p class="sub">Inget väntar. Gå till registret och kör nattkörningen.</p>')},
+logg(){return `<h1>Logg</h1><div class="sub">Varje ändring: vem, när och vad.</div><div class="tabell"><table><tr><th>Tid</th><th>Vem</th><th>Vad</th></tr>${S.logg.map(r=>`<tr><td style="white-space:nowrap">${r.tid}</td><td>${r.vem}</td><td>${r.vad}</td></tr>`).join("")}</table></div>`},
+sie(){const fk=S.forslag.filter(f=>f.typ==="faktura"&&f.status==="godkänd");
+ const rader=["#FLAGGA 0","#FORMAT PC8","#SIETYP 4",'#PROGRAM "Nordwik Kansliet" 0.1','#FNAMN "Exempelstiftet"','#KONTO 1510 "Kundfordringar"','#KONTO 3911 "Hyresintäkter"'];
+ fk.forEach((f,i)=>{const d=f.data,b=d.belopp.toFixed(2);rader.push(`#VER "A" ${i+1} ${d.ff.replaceAll("-","")} "${d.text}"`,"{",`   #TRANS 1510 {} ${b}`,`   #TRANS 3911 {} -${b}`,"}")});
+ return `<h1>SIE-export</h1><div class="sub">Godkända fakturor som SIE 4-fil till ekonomisystemet. ${fk.length?"":"Inga godkända fakturor ännu – godkänn en uppräkning, kör nattkörningen och godkänn fakturan."}</div><pre>${rader.join("\n")}</pre>`}};
+const vant=()=>S.forslag.filter(f=>f.status==="väntar").length;
+function visa(sida,arg){location.hash=sida;document.getElementById("main").innerHTML=V[sida](arg);
+ document.getElementById("nav").innerHTML=[["register","Register"],["ko","Att godkänna"],["logg","Logg"],["sie","SIE-export"]].map(([k,n])=>`<a class="${k===sida?"on":""}" onclick="visa('${k}')">${n}${k==="ko"&&vant()?`<span class="badge">${vant()}</span>`:""}</a>`).join("");window.scrollTo(0,0)}
+visa(["ko","logg","sie"].includes(location.hash.slice(1))?location.hash.slice(1):"register");
+</script></body></html>
