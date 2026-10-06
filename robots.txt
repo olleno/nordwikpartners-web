@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /demo/
 
 Sitemap: https://nordwikpartners.se/sitemap.xml
+Sitemap: https://nordwikpartners.se/kansliet/register/sitemap.xml
