@@ -14,9 +14,13 @@
 <meta property="og:locale" content="sv_SE">
 <link rel="icon" href="/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&amp;family=Newsreader:opsz,wght@6..72,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&amp;family=Newsreader:opsz,wght@6..72,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Caveat:wght@600&amp;display=swap">
 <style>
-body{margin:0;background:#ffffff}
+body{margin:0;background:#fbfaf6}
+.hand{font-family:Caveat,'Bradley Hand','Segoe Print',cursive;font-weight:600;color:#4e7a45;line-height:1.1}
+.foto{display:block;width:100%;object-fit:cover;background:#e4e2db}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center}
+@media (max-width:900px){.hero{grid-template-columns:1fr}}
 a{color:#141a16}a:hover{color:#4e7a45}
 @media (max-width:600px){h2{font-size:32px !important}}
 </style>
@@ -44,15 +48,29 @@ a{color:#141a16}a:hover{color:#4e7a45}
 </div>
 </header>
 
-<section style="padding: 112px clamp(20px, 6.6vw, 96px) 96px">
-<div style="max-width: 1248px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+<section style="padding: 96px clamp(20px, 6.6vw, 96px) 120px">
+<div class="hero" style="max-width: 1248px; margin: 0 auto">
+<div style="display: flex; flex-direction: column; gap: 32px; min-width: 0">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #4e7a45">Redovisningsbyrå för vägföreningar, lantbruk, skog och hyreshus</p>
-<h1 style="margin: 0; font-weight: 800; font-size: clamp(34px, 6vw, 84px); line-height: 1.02; letter-spacing: -0.04em; max-width: 13em">Redovisningsbyrån är död<span style="color: #4e7a45">.</span><br>Länge leve redovisningsbyrån<span style="color: #4e7a45">.</span></h1>
+<p class="hand" style="margin: 0 0 -18px; font-size: 30px; transform: rotate(-2deg); transform-origin: left">För dig som sköter pärmen på kvällarna.</p>
+<h1 style="margin: 0; font-weight: 800; font-size: clamp(34px, 5vw, 72px); line-height: 1.02; letter-spacing: -0.04em; max-width: 13em">Redovisningsbyrån är död<span style="color: #4e7a45">.</span><br>Länge leve redovisningsbyrån<span style="color: #4e7a45">.</span></h1>
 <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #4a524d; max-width: 620px">Slipp kvittojakten och kvällarna med pärmen. Kansliet bokför varje natt, skickar avierna och ger dig ett månadsbrev med siffrorna. Tre AI-modeller kontrollerar varandras arbete, och en människa står för bokslutet.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
 <a href="#kom-igang" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; background: #4e7a45; color: #ffffff; text-decoration: none">Anslut på en kvart med BankID</a>
 <a href="mailto:kansliet@nordwikpartners.se?subject=Kansliet%20%E2%80%93%20boka%20genomg%C3%A5ng" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border: 1px solid #141a16; text-decoration: none">Boka en genomgång på 15 minuter</a>
 <a href="#sa-fungerar" style="text-decoration: underline; text-underline-offset: 4px">Så fungerar det</a>
+</div>
+</div>
+<div style="position: relative; padding-bottom: 72px">
+<img class="foto" src="https://images.unsplash.com/photo-1643622414200-8a363a4940d0?auto=format&fit=crop&w=1100&q=70" alt="Grusväg genom skogen" style="aspect-ratio: 4/3; box-shadow: 0 1px 0 #c4c9c5">
+<div style="position: absolute; left: -24px; right: 24px; bottom: 0; background: #ffffff; border: 1px solid #c4c9c5; box-shadow: 0 10px 30px rgba(20,26,22,.12); font-family: 'IBM Plex Mono', monospace; font-size: 13px">
+<div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; padding: 8px 16px; color: #6b726e; font-size: 11px; letter-spacing: .06em; border-bottom: 1px solid #c4c9c5"><span>AVGIFT 2026</span><span>OCR</span><span style="text-align: right">STATUS</span></div>
+<div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; padding: 8px 16px; border-bottom: 1px solid #e4e2db"><span>Fastighet 12</span><span>88412</span><span style="text-align: right; color: #4e7a45">betald ✓</span></div>
+<div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; padding: 8px 16px; border-bottom: 1px solid #e4e2db"><span>Fastighet 14</span><span>88491</span><span style="text-align: right; color: #4e7a45">betald ✓</span></div>
+<div style="position: relative; display: grid; grid-template-columns: 1.3fr 1fr 1fr; padding: 8px 16px"><span>Fastighet 19</span><span>88529</span><span style="text-align: right; color: #a8432a">obetald</span>
+<svg viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: -6px -4px; width: calc(100% + 8px); height: calc(100% + 12px); overflow: visible"><path d="M8 22 C 6 6, 150 2, 290 10 C 302 14, 296 34, 250 36 C 160 41, 20 40, 10 28 C 6 24, 12 16, 30 14" fill="none" stroke="#4e7a45" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+</div>
+<p class="hand" style="position: absolute; right: 0; bottom: -46px; margin: 0; font-size: 26px; transform: rotate(-3deg)">Påminnelsen går ut i morgon – av sig själv.</p>
 </div>
 </div>
 </section>
@@ -72,9 +90,9 @@ a{color:#141a16}a:hover{color:#4e7a45}
 <h2 style="margin: 0 0 16px; font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.03em; max-width: 18em">Byggt för just din verksamhet<span style="color: #4e7a45">.</span></h2>
 <p style="margin: 0 0 56px; font-size: 19px; color: #4a524d; max-width: 640px">Kansliet kan reglerna för tre slags kunder. Välj den som passar dig.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0 48px">
-<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Vägföreningar och samfälligheter</h3><p style="margin: 0; color: #4a524d">Du slipper jaga inbetalningar och sitta med bokslutet kvällen före stämman.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Avgiftsavier med OCR-nummer</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Inbetalningar prickas av automatiskt</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Uttaxering enligt stämmans beslut</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsbokslut och underlag till revisorerna</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">2 400 kr per år exkl. moms</p></article>
-<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Lantbruk och skog</h3><p style="margin: 0; color: #4a524d">Du slipper vänta till deklarationen för att veta hur året gick.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Bokföring och moms</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Arrendeavier och skogsintäkter</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Skattetips från september: periodiseringsfond, skogskonto, räntefördelning</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsavslut och NE-bilaga</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">625 kr per månad exkl. moms</p></article>
-<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Hyreshus och lokaler</h3><p style="margin: 0; color: #4a524d">Du slipper hyresavierna och kvartalets kvittohög.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Hyresavier och avprickning</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Kontantmetoden när den passar</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Månadsbrev med kassa och nyckeltal</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsavslut och deklarationsbilaga</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">625 kr per månad exkl. moms</p></article>
+<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><img class="foto" src="https://images.unsplash.com/photo-1591209196872-68c793021588?auto=format&fit=crop&w=700&q=70" alt="Grusväg mellan träd" loading="lazy" style="aspect-ratio: 16/10; margin-bottom: 6px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Vägföreningar och samfälligheter</h3><p style="margin: 0; color: #4a524d">Du slipper jaga inbetalningar och sitta med bokslutet kvällen före stämman.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Avgiftsavier med OCR-nummer</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Inbetalningar prickas av automatiskt</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Uttaxering enligt stämmans beslut</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsbokslut och underlag till revisorerna</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">2 400 kr per år exkl. moms</p></article>
+<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><img class="foto" src="https://images.unsplash.com/photo-1730408649750-e2efd06110cd?auto=format&fit=crop&w=700&q=70" alt="Röd lada vid en åker" loading="lazy" style="aspect-ratio: 16/10; margin-bottom: 6px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Lantbruk och skog</h3><p style="margin: 0; color: #4a524d">Du slipper vänta till deklarationen för att veta hur året gick.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Bokföring och moms</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Arrendeavier och skogsintäkter</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Skattetips från september: periodiseringsfond, skogskonto, räntefördelning</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsavslut och NE-bilaga</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">625 kr per månad exkl. moms</p></article>
+<article style="padding: 32px 0; border-top: 2px solid #141a16; display: flex; flex-direction: column; gap: 14px"><img class="foto" src="https://images.unsplash.com/photo-1536363511619-505315aded7c?auto=format&fit=crop&w=700&q=70" alt="Husfasader i rött och gult" loading="lazy" style="aspect-ratio: 16/10; margin-bottom: 6px"><h3 style="margin: 0; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">Hyreshus och lokaler</h3><p style="margin: 0; color: #4a524d">Du slipper hyresavierna och kvartalets kvittohög.</p><ul style="margin: 0; padding: 0; list-style: none; font-size: 15px"><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Hyresavier och avprickning</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Kontantmetoden när den passar</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Månadsbrev med kassa och nyckeltal</li><li style="padding: 8px 0; border-top: 1px solid #c4c9c5">Årsavslut och deklarationsbilaga</li></ul><p style="margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px">625 kr per månad exkl. moms</p></article>
 </div>
 </div>
 </section>
@@ -98,6 +116,7 @@ a{color:#141a16}a:hover{color:#4e7a45}
 <div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #c4c9c5; font-size: 14px"><div><div style="font-weight: 600">Avgift fastighet 14</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6b726e">OCR 88491 · bankgiro</div></div><div style="text-align: right; white-space: nowrap"><div style="font-family: 'IBM Plex Mono', monospace">+2 400 kr</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4e7a45">prickad mot avin</div></div></div>
 <div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid #c4c9c5; font-size: 14px"><div><div style="font-weight: 600">Swish till privatperson</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #6b726e">Ny mottagare · K16, K17</div></div><div style="text-align: right; white-space: nowrap"><div style="font-family: 'IBM Plex Mono', monospace">−4 950 kr</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9a6b12">väntar på attest</div></div></div>
 <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px"><span style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; background: #4e7a45; color: #ffffff; font-size: 14px">Godkänn</span><span style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border: 1px solid #141a16; font-size: 14px">Fråga Kansliet</span></div>
+<p class="hand" style="margin: 14px 0 0; font-size: 26px; transform: rotate(-2deg)">↑ Ett klick, sen är du klar.</p>
 </div>
 <figcaption style="margin-top: 12px; font-size: 14px; color: #6b726e"><span style="font-weight: 600; color: #141a16">Figur.</span> Exempel med påhittade händelser. Så ser det ut när något behöver ditt svar.</figcaption>
 </figure>
@@ -164,6 +183,7 @@ a{color:#141a16}a:hover{color:#4e7a45}
 <h2 style="margin: 0 0 16px; font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.03em; max-width: 18em">Bakom agenterna finns en människa<span style="color: #4e7a45">.</span></h2>
 <p style="margin: 0 0 16px; font-size: 19px; color: #4a524d; max-width: 640px">Jag heter Olle Nordberg och driver Kansliet inom Nordwik Partners. Jag har arbetat med företagsfinansiering på svenska affärsbanker och som ekonomichef, och suttit i en ideell förenings styrelse i över tio år, bland annat med ansvar för ekonomin. Jag har också suttit i styrelser för samfälligheter och varit med och bildat gemensamhetsanläggningar, så jag vet hur det ser ut både från kassörens stol och från styrelsens sida.</p>
 <p style="margin: 0 0 32px; font-size: 19px; color: #4a524d; max-width: 640px">Agenterna gör det löpande arbetet. Mejl till kansliet@nordwikpartners.se läses först av Rolf, vår AI-assistent, som svarar direkt på det han kan. Resten går till mig.</p>
+<p class="hand" style="margin: -16px 0 28px; font-size: 40px; transform: rotate(-4deg); transform-origin: left">/Olle</p>
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 15px"><a href="mailto:kansliet@nordwikpartners.se">kansliet@nordwikpartners.se</a></p>
 </div>
 </div>
@@ -356,6 +376,8 @@ a{color:#141a16}a:hover{color:#4e7a45}
 <p style="margin: 0 0 12px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #4e7a45">10 · Kanslitjänster</p>
 <h2 style="margin: 0 0 16px; font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.03em; max-width: 18em">Inte bara bokföring. Hela kansliet<span style="color: #4e7a45">.</span></h2>
 <p style="margin: 0 0 56px; font-size: 19px; color: #4a524d; max-width: 640px">Alla behöver inte en redovisningsbyrå. Många föreningar och markägare behöver ett kansli: någon som håller registret, skickar avierna, kallar till stämman och bevakar avtalen. Har ni redan någon som bokför? Välj bara kansliet. Eller låt oss sköta båda.</p>
+<figure style="margin: 0 0 64px; position: relative"><img class="foto" src="https://images.unsplash.com/photo-1705513302021-c88e543254de?auto=format&fit=crop&w=1600&q=70" alt="Brygga vid en skogssjö" loading="lazy" style="aspect-ratio: 21/8">
+<figcaption class="hand" style="position: absolute; left: 24px; bottom: 18px; font-size: 30px; color: #ffffff; text-shadow: 0 1px 8px rgba(0,0,0,.45); transform: rotate(-2deg)">Båtklubben, fiskevården, vägen – samma kansli.</figcaption></figure>
 <p style="margin: 0 0 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4e7a45">Kärnan i varje kanslitjänst · under uppbyggnad, vägföreningar och arrenden först</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 40px">
 <div style="padding: 24px 0; border-top: 1px solid #141a16"><h3 style="margin: 0 0 8px; font-weight: 800; font-size: 19px; letter-spacing: -0.02em">Register</h3><p style="margin: 0; color: #4a524d">Medlemmar, fastigheter och andelstal på ett ställe. Ägarbyten förs in när de anmäls, och historiken sparas.</p></div>
@@ -403,7 +425,7 @@ a{color:#141a16}a:hover{color:#4e7a45}
 <span>Kansliet är en tjänst från Nordwik Partners AB, org.nr 559518-4457</span>
 <span><a href="mailto:kansliet@nordwikpartners.se">kansliet@nordwikpartners.se</a></span>
 </div>
-</footer>
+<p style="max-width: 1248px; margin: 16px auto 0; font-size: 12px; color: #6b726e">Foton: Unsplash.</p></footer>
 
 </div>
 </body>
