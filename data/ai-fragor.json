@@ -1,0 +1,267 @@
+{
+  "uppdaterad": "2026-10-17",
+  "beskrivning": "Frågebank för AI-synlighet: frågor som målgruppen ställer till AI-tjänster och vilken sida som borde vara svaret.",
+  "fragor": [
+    {
+      "fraga": "Hur stor andel av detaljplanerna som når samråd blir aldrig antagna?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad gör man när en detaljplan har stannat efter samrådet?",
+      "avsikt": "problem",
+      "sida": "https://nordwikpartners.se/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vem kan hjälpa till med en avstannad detaljplan i Stockholms län?",
+      "avsikt": "hitta tjänst",
+      "sida": "https://nordwikpartners.se/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur kan man ta tillvara en outnyttjad byggrätt i en gällande detaljplan?",
+      "avsikt": "problem",
+      "sida": "https://nordwikpartners.se/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur lång tid tar en detaljplan från start till antagande?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad kostar en första bedömning av en stoppad detaljplan?",
+      "avsikt": "pris",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur fungerar arvode och vinstdelning när någon driver en detaljplan åt en markägare?",
+      "avsikt": "pris",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad är skillnaden mellan en räknefråga och en förhandlingsfråga i planprocessen?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur kan en investerare gå in i ett enskilt markprojekt?",
+      "avsikt": "hitta tjänst",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vilka specialister behövs i ett detaljplaneprojekt?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/sa-arbetar-vi.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Behövs alltid en detaljplan för att bygga nytt?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/case.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Kan en utgången genomförandetid användas i förhandling med kommunen?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/case.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur många svenskar över 55 bor i eget hus?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/insikt-55plus.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur ofta flyttar äldre från villan?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/insikt-55plus.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad krävs för att etablera ett datacenter i Sverige?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/insikt-datacenter.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Var i Norden byggs nya AI-datacenter och varför?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/insikt-datacenter.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad är Kommunradar?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/radarnatverket.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur kan man samla källor om fastigheter, detaljplaner och ägare i Stockholms län?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/plattformen.html",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur många samfällighetsföreningar finns det i Sverige?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/kansliet/register/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur många vägföreningar finns i Skåne län?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/kansliet/register/skane-lan/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur många dikningsföretag finns i Östergötlands län?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/kansliet/register/ostergotlands-lan/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vilka samfälligheter finns i Stockholms kommun?",
+      "avsikt": "hitta",
+      "sida": "https://nordwikpartners.se/kansliet/register/stockholms-lan/kommun/stockholm/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vilka fiskevårdsområden finns i Sverige?",
+      "avsikt": "hitta",
+      "sida": "https://nordwikpartners.se/kansliet/register/fiskevardsomraden/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad är ett dikningsföretag?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/om-dikningsforetag/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vem ska underhålla ett dike på min mark?",
+      "avsikt": "problem",
+      "sida": "https://nordwikpartners.se/kansliet/register/om-dikningsforetag/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur hittar jag akten för ett dikningsföretag?",
+      "avsikt": "hitta",
+      "sida": "https://nordwikpartners.se/kansliet/register/om-dikningsforetag/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad kostar det att väcka ett vilande dikningsföretag?",
+      "avsikt": "pris",
+      "sida": "https://nordwikpartners.se/kansliet/register/om-dikningsforetag/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur gör man en debiteringslängd i en samfällighetsförening?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/guider/debiteringslangd/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad är andelstal i en vägförening?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/guider/andelstal/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Kan en enskild väg få statsbidrag?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/guider/statsbidrag-enskild-vag/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Hur går en föreningsstämma i en samfällighetsförening till?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/guider/stamma-samfallighetsforening/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vilka typer av arrende finns och hur sätts arrendeavgiften?",
+      "avsikt": "förstå",
+      "sida": "https://nordwikpartners.se/kansliet/register/guider/arrende/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad kostar bokföring för en vägförening?",
+      "avsikt": "pris",
+      "sida": "https://nordwikpartners.se/kansliet/register/",
+      "status": "svarssida finns"
+    },
+    {
+      "fraga": "Vad ska kassören i en vägförening göra inför stämman?",
+      "avsikt": "checklista",
+      "sida": "https://nordwikpartners.se/kansliet/checklista.html",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Hur lång tid har en medlem på sig att klandra ett stämmobeslut i en samfällighet?",
+      "avsikt": "fakta",
+      "sida": "https://nordwikpartners.se/kansliet/checklista.html",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Finns det en redovisningsbyrå som använder AI för föreningar och samfälligheter?",
+      "avsikt": "hitta tjänst",
+      "sida": "https://nordwikpartners.se/kansliet/",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Vad kostar bokföring för lantbruk och skog?",
+      "avsikt": "pris",
+      "sida": "https://nordwikpartners.se/kansliet/",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Hur säker är AI-bokföring och hur många fel fångas?",
+      "avsikt": "förtroende",
+      "sida": "https://nordwikpartners.se/kansliet/",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Var lagras bokföringen när AI sköter den?",
+      "avsikt": "förtroende",
+      "sida": "https://nordwikpartners.se/kansliet/",
+      "status": "svarssida finns men är dold (noindex)",
+      "anmarkning": "Kansliet är dold för sökmotorer sedan 2026-10-06. Olle beslutar när den öppnas."
+    },
+    {
+      "fraga": "Vilka kommuner i Stockholms län har flest detaljplaner som aldrig antas?",
+      "avsikt": "fakta",
+      "sida": null,
+      "status": "data saknas",
+      "anmarkning": "Siffrorna/texten finns inte publicerade på en öppen sida. Ingen sida skapad."
+    },
+    {
+      "fraga": "Hur ansöker man om planbesked steg för steg?",
+      "avsikt": "förstå",
+      "sida": null,
+      "status": "data saknas",
+      "anmarkning": "Siffrorna/texten finns inte publicerade på en öppen sida. Ingen sida skapad."
+    },
+    {
+      "fraga": "Hur länge dröjer det från planbesked till planuppdrag i Stockholms kommuner?",
+      "avsikt": "fakta",
+      "sida": null,
+      "status": "data saknas",
+      "anmarkning": "Siffrorna/texten finns inte publicerade på en öppen sida. Ingen sida skapad."
+    }
+  ]
+}

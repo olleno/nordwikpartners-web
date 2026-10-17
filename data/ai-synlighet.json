@@ -1,0 +1,44 @@
+{
+  "uppdaterad": "2026-10-17",
+  "sajt": "nordwikpartners.se",
+  "namn_overallt": {
+    "organisation": "Nordwik Partners",
+    "tjanst_redovisning": "Kansliet",
+    "beskrivning": "Nordwik Partners tar avstannade detaljplaner i mål, väcker outnyttjade byggrätter och driver nya planbesked i Stockholms län."
+  },
+  "matprotokoll": {
+    "frekvens": "en gång i månaden, första veckan",
+    "fragor": "alla frågor i data/ai-fragor.json, oförändrade från månad till månad",
+    "tjanster": [
+      "ChatGPT",
+      "Gemini",
+      "Claude",
+      "Perplexity",
+      "Copilot"
+    ],
+    "hur": "Bara via tjänsternas officiella gränssnitt eller API:er. Ingen automatisk skrapning av AI-tjänsternas webbsidor. Ny chatt utan inloggad historik för varje fråga.",
+    "klassning": [
+      "ej nämnd",
+      "nämnd",
+      "topp 3",
+      "nr 1"
+    ],
+    "spara_per_svar": [
+      "datum",
+      "tjanst",
+      "fraga",
+      "klass",
+      "citerad_url"
+    ]
+  },
+  "nyckeltal": {
+    "andel_ai_svar_dar_sajten_nams": "antal svar klassade nämnd, topp 3 eller nr 1 delat med antal svar",
+    "besok_fran_ai_tjanster": "GoatCounter (nordwik.goatcounter.com), hänvisningar från chatgpt.com, perplexity.ai, gemini.google.com, claude.ai, copilot.microsoft.com och bing.com/chat",
+    "andel_indexerade_sidor": "Google Search Console (verifieringsfil googlecb1bc89319243a1b.html finns) mot antal adresser i sitemaps",
+    "klick_vidare_affiliate": "ej tillämpligt – sajten har inga affiliatelänkar"
+  },
+  "begransningar": [
+    "GitHub Pages ger inga serverloggar, så AI-botarnas crawl kan inte räknas härifrån."
+  ],
+  "matningar": []
+}

@@ -1,5 +1,46 @@
 User-agent: *
 Disallow: /demo/
 
+# AI-tjänster och sökmotorer är välkomna att läsa och citera sajten.
+User-agent: GPTBot
+Allow: /
+Disallow: /demo/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /demo/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /demo/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /demo/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /demo/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /demo/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /demo/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /demo/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /demo/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /demo/
+
 Sitemap: https://nordwikpartners.se/sitemap.xml
 Sitemap: https://nordwikpartners.se/kansliet/register/sitemap.xml

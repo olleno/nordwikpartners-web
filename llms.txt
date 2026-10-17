@@ -1,0 +1,41 @@
+# Nordwik Partners
+
+> Nordwik Partners tar avstannade detaljplaner i mål, väcker outnyttjade byggrätter och driver nya planbesked i Stockholms län. Under namnet Kansliet driver Nordwik Partners också ett öppet register över samfälligheter, vägföreningar och dikningsföretag i hela Sverige, med guider för styrelser och markägare.
+
+Webbplats: https://nordwikpartners.se/
+Kontakt: kontakt@nordwikpartners.se, 070-532 36 83 (detaljplaner och byggrätter) · kansliet@nordwikpartners.se (Kansliet)
+Verksamhetsområde: detaljplaner och byggrätter i Stockholms län; registret omfattar hela Sverige.
+Kansliet drivs av Foodbergs Stockholm AB, org.nr 559518-4457.
+Språk: svenska.
+
+## Detaljplaner och byggrätter
+
+- [Startsida](https://nordwikpartners.se/): tre lägen – planen har stannat, byggrätten står oanvänd, marken är utpekad men ingen har ansökt. En av fyra detaljplaner som når samråd blir aldrig antagen.
+- [Så arbetar vi](https://nordwikpartners.se/sa-arbetar-vi.html): metod, vem som gör vad, tre steg (kostnadsfritt samtal, stoppdiagnos till fast pris, partnerskap med arvode och vinstdelning).
+- [Case](https://nordwikpartners.se/case.html): erfarenhet från tidigare uppdrag, utan namngivna uppdragsgivare.
+- [Plattformen](https://nordwikpartners.se/plattformen.html): registret om marken i Stockholms län, där varje uppgift har källa, datum och status.
+- [Insikter](https://nordwikpartners.se/insikter.html): artiklar om mark, planer och kalkyl.
+- [Bostäder 55+](https://nordwikpartners.se/insikt-55plus.html): hur ofta äldre lämnar villan, mätt i alla 290 kommuner.
+- [Datacenteretableringar](https://nordwikpartners.se/insikt-datacenter.html): vad som krävs, var och till vilket pris.
+- [Radarnätverket](https://nordwikpartners.se/radarnatverket.html): tjänster byggda på öppna svenska data, bland annat Kommunradar och Race Point.
+
+## Register och guider (Kansliet)
+
+Privat tjänst från Nordwik Partners, inte en myndighet. Ingen juridisk rådgivning.
+
+- [Register, hela Sverige](https://nordwikpartners.se/kansliet/register/): samfällighetsföreningar, vägföreningar och dikningsföretag, län för län och kommun för kommun.
+- [Fiskevårdsområden](https://nordwikpartners.se/kansliet/register/fiskevardsomraden/): fiskevårdsområden i hela Sverige.
+- [Vad är ett dikningsföretag?](https://nordwikpartners.se/kansliet/register/om-dikningsforetag/): vem som ska underhålla diket och hur kostnaden fördelas.
+- [Guider](https://nordwikpartners.se/kansliet/register/guider/): debiteringslängd, andelstal, statsbidrag till enskild väg, föreningsstämma och arrende.
+
+### Hur datan tas fram
+
+- Föreningar: SCB:s allmänna företagsregister, senast hämtat 2026-10-06. Typen (till exempel vägförening) är bedömd ur föreningens namn.
+- Dikningsföretag: Länsstyrelsernas Vattenarkiv, i de län där det finns som öppna data. Varje företag länkar till sin akt hos Länsstyrelsen.
+- Guiderna hänvisar till lag och myndighetskällor på respektive sida.
+
+## Maskinläsbar data (bara läsning)
+
+- [Antal per län, JSON](https://nordwikpartners.se/data/register-lan.json): samma siffror som registrets startsida, med källa och hämtningsdatum per post.
+- [Schema för flödet](https://nordwikpartners.se/data/register-lan.schema.json): JSON Schema.
+- [Sitemap](https://nordwikpartners.se/sitemap.xml) och [registrets sitemap](https://nordwikpartners.se/kansliet/register/sitemap.xml).

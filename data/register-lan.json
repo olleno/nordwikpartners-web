@@ -1,0 +1,413 @@
+{
+  "namn": "Register över samfälligheter, vägföreningar och dikningsföretag – antal per län",
+  "utgivare": "Kansliet – Nordwik Partners",
+  "url": "https://nordwikpartners.se/kansliet/register/",
+  "schema": "https://nordwikpartners.se/data/register-lan.schema.json",
+  "licens_och_ansvar": "Privat tjänst från Nordwik Partners, inte en myndighet. Ingen juridisk rådgivning.",
+  "anmarkningar": [
+    "Dikningsföretag finns bara för de län där Länsstyrelsen har publicerat Vattenarkivet som öppna data (null = uppgift saknas).",
+    "Vägföreningarna är bedömda ur namnet och omfattar alla föreningsformer. De som är samfällighetsföreningar räknas också bland samfälligheterna.",
+    "Hämtningsdatum för Vattenarkivet anges inte på sajten och lämnas därför tomt."
+  ],
+  "poster": [
+    {
+      "lan": "Stockholms län",
+      "sida": "https://nordwikpartners.se/kansliet/register/stockholms-lan/",
+      "samfallighetsforeningar": 4204,
+      "vagforeningar": 1056,
+      "dikningsforetag": 1387,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Uppsala län",
+      "sida": "https://nordwikpartners.se/kansliet/register/uppsala-lan/",
+      "samfallighetsforeningar": 1512,
+      "vagforeningar": 691,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Södermanlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/sodermanlands-lan/",
+      "samfallighetsforeningar": 1186,
+      "vagforeningar": 357,
+      "dikningsforetag": 545,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Östergötlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/ostergotlands-lan/",
+      "samfallighetsforeningar": 1450,
+      "vagforeningar": 823,
+      "dikningsforetag": 2130,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Jönköpings län",
+      "sida": "https://nordwikpartners.se/kansliet/register/jonkopings-lan/",
+      "samfallighetsforeningar": 1115,
+      "vagforeningar": 610,
+      "dikningsforetag": 1177,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Kronobergs län",
+      "sida": "https://nordwikpartners.se/kansliet/register/kronobergs-lan/",
+      "samfallighetsforeningar": 603,
+      "vagforeningar": 277,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Kalmar län",
+      "sida": "https://nordwikpartners.se/kansliet/register/kalmar-lan/",
+      "samfallighetsforeningar": 1149,
+      "vagforeningar": 550,
+      "dikningsforetag": 968,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Gotlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/gotlands-lan/",
+      "samfallighetsforeningar": 295,
+      "vagforeningar": 71,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Blekinge län",
+      "sida": "https://nordwikpartners.se/kansliet/register/blekinge-lan/",
+      "samfallighetsforeningar": 499,
+      "vagforeningar": 262,
+      "dikningsforetag": 763,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Skåne län",
+      "sida": "https://nordwikpartners.se/kansliet/register/skane-lan/",
+      "samfallighetsforeningar": 3427,
+      "vagforeningar": 1405,
+      "dikningsforetag": 4721,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Hallands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/hallands-lan/",
+      "samfallighetsforeningar": 1423,
+      "vagforeningar": 812,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Västra Götalands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/vastra-gotalands-lan/",
+      "samfallighetsforeningar": 6678,
+      "vagforeningar": 3035,
+      "dikningsforetag": 3825,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Värmlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/varmlands-lan/",
+      "samfallighetsforeningar": 1427,
+      "vagforeningar": 1028,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Örebro län",
+      "sida": "https://nordwikpartners.se/kansliet/register/orebro-lan/",
+      "samfallighetsforeningar": 1264,
+      "vagforeningar": 547,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Västmanlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/vastmanlands-lan/",
+      "samfallighetsforeningar": 966,
+      "vagforeningar": 308,
+      "dikningsforetag": 821,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Dalarnas län",
+      "sida": "https://nordwikpartners.se/kansliet/register/dalarnas-lan/",
+      "samfallighetsforeningar": 1668,
+      "vagforeningar": 703,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Gävleborgs län",
+      "sida": "https://nordwikpartners.se/kansliet/register/gavleborgs-lan/",
+      "samfallighetsforeningar": 1600,
+      "vagforeningar": 836,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Västernorrlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/vasternorrlands-lan/",
+      "samfallighetsforeningar": 1267,
+      "vagforeningar": 766,
+      "dikningsforetag": 314,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Jämtlands län",
+      "sida": "https://nordwikpartners.se/kansliet/register/jamtlands-lan/",
+      "samfallighetsforeningar": 1520,
+      "vagforeningar": 931,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Västerbottens län",
+      "sida": "https://nordwikpartners.se/kansliet/register/vasterbottens-lan/",
+      "samfallighetsforeningar": 1754,
+      "vagforeningar": 1055,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    },
+    {
+      "lan": "Norrbottens län",
+      "sida": "https://nordwikpartners.se/kansliet/register/norrbottens-lan/",
+      "samfallighetsforeningar": 1463,
+      "vagforeningar": 938,
+      "dikningsforetag": null,
+      "kallor": [
+        {
+          "uppgift": "samfallighetsforeningar, vagforeningar",
+          "kalla": "SCB:s allmänna företagsregister",
+          "hamtad": "2026-10-06"
+        },
+        {
+          "uppgift": "dikningsforetag",
+          "kalla": "Länsstyrelsernas Vattenarkiv (öppna data)",
+          "hamtad": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nordwikpartners.se/data/register-lan.schema.json",
+  "title": "Register över samfälligheter, vägföreningar och dikningsföretag – antal per län",
+  "type": "object",
+  "required": ["namn", "utgivare", "url", "poster"],
+  "properties": {
+    "namn": {"type": "string"},
+    "utgivare": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "schema": {"type": "string", "format": "uri"},
+    "licens_och_ansvar": {"type": "string"},
+    "anmarkningar": {"type": "array", "items": {"type": "string"}},
+    "poster": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["lan", "sida", "samfallighetsforeningar", "vagforeningar", "dikningsforetag", "kallor"],
+        "properties": {
+          "lan": {"type": "string"},
+          "sida": {"type": "string", "format": "uri"},
+          "samfallighetsforeningar": {"type": "integer", "minimum": 0},
+          "vagforeningar": {"type": "integer", "minimum": 0},
+          "dikningsforetag": {"type": ["integer", "null"], "minimum": 0},
+          "kallor": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["uppgift", "kalla", "hamtad"],
+              "properties": {
+                "uppgift": {"type": "string"},
+                "kalla": {"type": "string"},
+                "hamtad": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
